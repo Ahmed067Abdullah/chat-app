@@ -3,19 +3,31 @@
 <html>
 
 <head>
-	<meta charset = "UTF-8"> 
+  <title>Join | Chat App</title>
+	<meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no"> 
+  <link rel="stylesheet" href="/css/styles.css">
+
 </head>
 
-<body>
-	<p>Welcome to chat app</p>
-	<from id = "message-form" action= "">
-		<input type="text" name="message" placeholder="Message"/>
-		<button>Send</button>
-	</from>
+<body class= "centered-form">
+  <div class="centered-form__form">
+    <form action="/chat.html">
+      <div class="form-field">
+        <h3>Join a Chat</h3>
+      </div>
+      <div class="form-field">
+        <label>Display name<input type="text" name="name" autofocus></label>
+      </div>
+      <div class="form-field">
+          <label>Room name<input type="text" name="room" autofocus></label>
+      </div>
+      <div class="form-field">
+        <button>Join</button>
+      </div>
+    </form>  
+  </div>
 
-	<script src="/socket.io/socket.io.js"></script>
-	<script scr="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="/js/index.js"></script>	
-<body>
+</body>
 
 </html>
