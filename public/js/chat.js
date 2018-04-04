@@ -25,7 +25,7 @@ var socket = io();
 				if(error)
 				{
 					alert(error)
-					window.location.href = "/local"
+					window.location.href = "../"
 				}
 				else
 				{

@@ -37,6 +37,14 @@ class Users{
 		console.log("names",names);
 		return names;
 	}
+	checkName(name,room){
+		console.log("Hmm ",this.users);
+		var user = this.users.filter((user)=> {
+			return (user.room == room && user.name == name)
+		});
+		console.log("Users hain ye",user)
+		return user.length;
+	}
 }
 
 module.exports = {Users}
